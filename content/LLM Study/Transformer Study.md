@@ -19,11 +19,11 @@
 - **Final Representation**    
     - Combining token embeddings with positional embeddings.
 
->[!notice] Notation 정리
-> `l` : token 의 길이
-> `d`(dim): 하나의 token 이 가지는 vector 의 크기
-> `vs`(vocab size): vocab 크기
-> `h` (head): attention 에서 head 의 갯수
+>[!notice] Notation 정리</br>
+> `l` : token 의 길이 </br>
+> `d`(dim): 하나의 token 이 가지는 vector 의 크기</br>
+> `vs`(vocab size): vocab 크기</br>
+> `h` (head): attention 에서 head 의 갯수</br>
 
 ## Transformer Architecture
 
