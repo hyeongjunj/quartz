@@ -1,4 +1,4 @@
-# Operators
+# Operations
 
 From tokens
 
