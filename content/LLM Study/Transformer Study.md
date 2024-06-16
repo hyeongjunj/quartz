@@ -47,8 +47,11 @@ TBU
 이상하게 [llama3.np](https://github.com/likejazz/llama3.np) 에서는 그냥 K, Q, V 모두 6개로 쪼개서 MHA 마냥 돌아가는게 디폴트 세팅값이긴 하다.
 
 ## KV Cache
-TBU
+
+![[kvcache.png]]
 
 
 # References
-TBU
+1. [llama3.np](https://github.com/likejazz/llama3.np) 
+2. [Full Stack Optimization of Transformer Inference: a Survey](https://arxiv.org/pdf/2302.14017) 
+3. [GQA](https://arxiv.org/pdf/2305.13245) 
