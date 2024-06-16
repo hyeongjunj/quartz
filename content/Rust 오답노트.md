@@ -105,8 +105,8 @@ fn main() {
 }
 ```
 
-> [!question] `for message in messages` 이거랑  `for message in &messages` 이거 둘다 `call()` 메소드를 호출 가능한 이유는?
-
+> [!question] Question
+>  `for message in messages` 이거랑  `for message in &messages` 이거 둘다 `call()` 메소드를 호출 가능한 이유는?
 
 ---
 ## String
