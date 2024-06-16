@@ -51,7 +51,7 @@ mod tests {
 }
 ```
 
-```Rust
+```rust
     v.iter().map(|&element| {
         element * 2
     }).collect()
@@ -64,7 +64,7 @@ mod tests {
 Rust에서 `Vec<T>` 타입의 벡터를 `clone()`할 때, 참조에 대해 `clone()`을 호출하는 방법과 직접 벡터에 `clone()`을 호출하는 방법 모두 가능하고, 이 두 방식의 동작은 동일하다.(아래 코드 참고) 
 이는 `clone()` 메서드가 `Clone` 트레잇을 구현하는 모든 타입에 대해 제공되며, `&T` (T의 참조)에 대해서도 `Clone` 트레잇이 자동으로 구현되기 때문이다. (자동으로 구현된다는 말이 뭐지?)
 
-```Rust
+```rust
 fn main() {
     let v = vec![1, 2, 3];
     let v_cloned = v.clone(); // v를 직접 클론
@@ -76,7 +76,7 @@ fn main() {
 ---
 ## Enum
 
-```Rust
+```rust
 #[derive(Debug)]
 enum Message {
     Move {x: u32, y: u32},
@@ -134,13 +134,12 @@ fn is_a_color_word(attempt: &str) -> bool {
 Rust에서 `String` 타입은 `Deref` 트레잇을 구현한다. 이 트레잇의 구현은 `String`을 그 내용을 가리키는 `&str` 슬라이스로 변환하는 `deref` 메소드를 제공한다. `Deref` 트레잇을 구현하는 모든 타입은 필요할 때 컴파일러에 의해 자동으로 참조될 수 있다. 
 위 코드를 예시로 보면, `main` 함수에서 `&word` 표현은 `&String` 타입이지만, `is_a_color_word` 함수에 전달될 때, Rust 컴파일러가 `&String`을 `&str`로 자동 변환한다. 
 
-> [!question]
-Deref trait 이 구현되어 있으면 저렇게 자동으로 & 참조 연산을 할 때 Deref 트레잇이 호출되는가?
+> [!question] Deref trait 이 구현되어 있으면 저렇게 자동으로 & 참조 연산을 할 때 Deref 트레잇이 호출되는가?
 
 ### String and Char
 
-```Rust
-`fn main() {
+```rust
+fn main() {
 	let s = String::from("hello");
 	let last_char = s.chars().last().unwrap(); // 'o'를 반환     
 	println!("Last character: {}", last_char); }`
@@ -155,7 +154,7 @@ Deref trait 이 구현되어 있으면 저렇게 자동으로 & 참조 연산을
 
 ## HashMap
 
-```Rust
+```rust
     let mut scores: HashMap<String, Team> = HashMap::new();
 
     for r in results.lines() {
