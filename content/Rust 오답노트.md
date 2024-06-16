@@ -5,7 +5,7 @@
 - **Slices** (`&[T]`) are dynamically-sized view into a sequence of `T` and cannot exist independently; they must always be borrowed from an array or another slice.
 
 ### Tuple
-```Rust
+```rust
 let cat = ("String1", 3.5);
 let (a,b) = cat;
 ```
@@ -15,7 +15,7 @@ indexing 은 `cat.0`, `cat.1` 이런 식으로 함. 배열이랑 다르다!
 ---
 ## Vector and Iterator
 
-```Rust
+```rust
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
     for element in v.iter_mut() {
         *element *= 2;
