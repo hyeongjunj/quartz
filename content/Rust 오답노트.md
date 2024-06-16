@@ -5,17 +5,17 @@
 - **Slices** (`&[T]`) are dynamically-sized view into a sequence of `T` and cannot exist independently; they must always be borrowed from an array or another slice.
 
 ### Tuple
-```Rust
+```rust
 let cat = ("String1", 3.5);
 let (a,b) = cat;
 ```
 
-indexing 은 `cat.0`, `cat.1` 이런 식으로 함. 배열이랑 다르다!
+indexing 은 `cat.0`, `cat.1` 이런 식으로 함. 배열이랑 다르다.
 
 ---
 ## Vector and Iterator
 
-```Rust
+```rust
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
     for element in v.iter_mut() {
         *element *= 2;
@@ -105,8 +105,7 @@ fn main() {
 }
 ```
 
-> [!question]
-`for message in messages` 이거랑  `for message in &messages` 이거 둘다 `call()` 메소드를 호출 가능한 이유는?
+> [!question] `for message in messages` 이거랑  `for message in &messages` 이거 둘다 `call()` 메소드를 호출 가능한 이유는?
 
 
 ---
@@ -118,7 +117,7 @@ String 과 as_str() (a.k.a. 문자열 슬라이스 &str)
 이럴 때, `var` 변수의 타입은 `&str` 가 된다. 
 
 ### Deref Coercion
-```Rust
+```rust
 fn main() {
     let word = String::from("green"); // Try not changing this line :)
     if is_a_color_word(&word) {
