@@ -1,3 +1,13 @@
+- [[#Primitive Datatypes|Primitive Datatypes]]
+	- [[#Primitive Datatypes#Slices vs. Arrays|Slices vs. Arrays]]
+	- [[#Primitive Datatypes#Tuple|Tuple]]
+- [[#Vector and Iterator|Vector and Iterator]]
+- [[#Enum|Enum]]
+- [[#String|String]]
+	- [[#String#Deref Coercion|Deref Coercion]]
+	- [[#String#String and Char|String and Char]]
+- [[#HashMap|HashMap]]
+
 ## Primitive Datatypes
 ### Slices vs. Arrays
 
@@ -192,3 +202,4 @@ fn main() {
 > Why `Some(&mut v)` not working? I thought I can be pattern matched.
 
 TBU
+
