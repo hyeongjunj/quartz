@@ -10,7 +10,7 @@ let cat = ("String1", 3.5);
 let (a,b) = cat;
 ```
 
-indexing 은 `cat.0`, `cat.1` 이런 식으로 함. 배열이랑 다르다!
+indexing 은 `cat.0`, `cat.1` 이런 식으로 함. 배열이랑 다르다.
 
 ---
 ## Vector and Iterator
