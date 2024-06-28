@@ -18,6 +18,11 @@ I am Hyeongjun Jeon 👋
 Thank you for visiting my page!
 
 ____
+# Resume
+
+![[HYEONGJUN_JEON_CV.pdf]]
+
+____
 # Contents
 
 ## LLM Study
